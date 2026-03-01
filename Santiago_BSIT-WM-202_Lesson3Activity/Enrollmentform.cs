@@ -60,19 +60,14 @@ namespace Santiago_BSIT_WM_202_Lesson3Activity
 
             txtTotalCredUnits.Text = totalCredUnits.ToString(); // Question 2b:b. Write the codes to display the total credit units in the TotalCreditUnitTextBox.
 
-            // i. Total Tuition Fee
             double totalTuitionFee = totalLecUnits * LECTURE_FEE;
 
-            // k. Computer Lab Fee
             double comLabFee = totalLabUnits * LAB_FEE;
 
-            // j. Miscellaneous Fees
             double totalMiscFee = comLabFee + CISCO_FEE + SAP_FEE + EXAM_BOOKLET_FEE;
 
-            // l. Total Tuition and Fees
             double totalTuitionAndFees = totalTuitionFee + totalMiscFee;
 
-            // m. Downpayment
             double remaining = totalTuitionAndFees - DOWNPAYMENT;
             double installment = remaining / 3;
 
